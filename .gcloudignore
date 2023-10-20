@@ -1,0 +1,23 @@
+# This file tells "gcloud functions deploy" which files and folders
+# to ignore. This is important when deploying multi-project functions,
+# as otherwise a lot of unnecessary files (particularly in the bin and
+# obj directories) may be uploaded.
+
+.gcloudignore
+.git
+.gitignore
+.editorconfig
+/.vs
+*.yml
+**/bin
+**/obj
+/configs
+/SqlScripts
+**/MonitorQA.Api
+**/MonitorQA.Api.Tests
+**/MonitorQA.Data.Migrations
+**/MonitorQA.Firebase.Tests
+**/MonitorQA.Pdf
+**/MonitorQA.Pdf.Tests
+**/MonitorQA.Sync
+**/MonitorQA.Testing
